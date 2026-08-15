@@ -722,6 +722,12 @@
         border: 2px solid #FFFFFF !important;
         cursor: pointer !important;
         touch-action: manipulation !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+      .assistant-trigger-btn * {
+        pointer-events: none !important;
       }
       .assistant-chat-window {
         position: fixed !important;
@@ -2122,7 +2128,7 @@
           $('html, body').animate({ scrollTop: 0 }, 500);
         });
 
-        $(document).on('click touchstart', '#assistantTrigger', function(e) {
+        $(document).on('click', '#assistantTrigger', function(e) {
           e.preventDefault();
           e.stopPropagation();
           $('#assistantWindow').toggleClass('active');
@@ -2131,7 +2137,7 @@
           }
         });
 
-        $(document).on('click touchstart', '#assistantClose', function(e) {
+        $(document).on('click', '#assistantClose', function(e) {
           e.preventDefault();
           e.stopPropagation();
           $('#assistantWindow').removeClass('active');
