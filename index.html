@@ -318,22 +318,57 @@
         display: none !important;
       }
 
+      /* Service Item Card High Contrast & Typography Fixes */
       .service-item {
-        background: #FFFFFF;
-        border-radius: 24px;
-        padding: 30px 24px;
-        border: 1px solid #E2E8F0;
-        box-shadow: 0 8px 24px rgba(10, 37, 64, 0.04);
-        transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background: #FFFFFF !important;
+        border-radius: 24px !important;
+        padding: 32px 26px !important;
+        border: 1px solid #E2E8F0 !important;
+        box-shadow: 0 8px 24px rgba(10, 37, 64, 0.04) !important;
+        transition: all 0.35s ease !important;
+        position: relative !important;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-      .service-item:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 40px rgba(27, 79, 140, 0.12);
-        border-color: #BAE6FD;
+      .service-item::before, .service-item::after {
+        display: none !important;
+      }
+      .service-item h3 {
+        color: #0F172A !important;
+        font-weight: 800 !important;
+        font-size: 1.22rem !important;
+        margin-bottom: 12px !important;
+        transition: color 0.35s ease !important;
+      }
+      .service-item p {
+        color: #475569 !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        transition: color 0.35s ease !important;
+      }
+      .service-item .read-more-btn a {
+        color: #0077FE !important;
+        font-weight: 700 !important;
+        transition: color 0.35s ease !important;
+      }
+
+      /* Hover & Active Dark Card State (High Contrast White Text) */
+      .service-item:hover, .service-item.active, .service-item:focus {
+        background: linear-gradient(135deg, #0A2540 0%, #16385C 100%) !important;
+        border-color: #16385C !important;
+        transform: translateY(-6px) !important;
+        box-shadow: 0 18px 40px rgba(10, 37, 64, 0.22) !important;
+      }
+      .service-item:hover h3, .service-item.active h3, .service-item:focus h3 {
+        color: #FFFFFF !important;
+      }
+      .service-item:hover p, .service-item.active p, .service-item:focus p {
+        color: #E2E8F0 !important;
+      }
+      .service-item:hover .read-more-btn a, .service-item.active .read-more-btn a, .service-item:focus .read-more-btn a {
+        color: #38BDF8 !important;
       }
       .service-item .icon-box {
         width: 62px;
@@ -349,11 +384,11 @@
         transition: all 0.35s ease;
         border: 1px solid rgba(0, 119, 254, 0.15);
       }
-      .service-item:hover .icon-box {
-        background: linear-gradient(135deg, #1B4F8C, #0077FE);
-        color: #FFFFFF;
+      .service-item:hover .icon-box, .service-item.active .icon-box {
+        background: linear-gradient(135deg, #0077FE, #10B981) !important;
+        color: #FFFFFF !important;
         transform: scale(1.06);
-        box-shadow: 0 8px 20px rgba(27, 79, 140, 0.25);
+        box-shadow: 0 8px 20px rgba(0, 119, 254, 0.4);
       }
 
       .why-choose-item .icon-box, .accordion-item .icon-box {
