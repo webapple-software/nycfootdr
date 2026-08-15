@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="In-depth guide to podiatric wound care services by Dr. Sapna Pandya, DPM in NYC. Specialized treatment for diabetic foot ulcers, venous leg wounds, arterial disease, and biologics.">
+	<meta name="author" content="NYC Foot Dr">
+	
+    <!-- Page Title -->
+    <title>Wound Care Guide — NYC Foot Dr (Dr. Sapna Pandya, DPM)</title>
+	
+    <!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/jpeg" href="assets/images/favicon.jpeg">
+	
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+	
+    <!-- Dentaire Template CSS Files -->
+	<link href="dentaire/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="dentaire/css/slicknav.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="dentaire/css/swiper-bundle.min.css">
+	<link href="dentaire/css/all.css" rel="stylesheet" media="screen">
+	<link href="dentaire/css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="dentaire/css/magnific-popup.css">
+	<link rel="stylesheet" href="dentaire/css/mousecursor.css">
+	<link href="dentaire/css/custom.css" rel="stylesheet" media="screen">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- High End Animated Page Custom CSS & Mobile Responsiveness -->
+    <style>
+      :root {
+        --primary-navy: #1B4F8C;
+        --secondary-sky: #0077FE;
+        --light-ice-bg: #F0F7FF;
+        --brand-gradient: linear-gradient(135deg, #1B4F8C 0%, #0077FE 100%);
+      }
+
+      /* Hide Stray Magic Cursor Overlay Dot */
+      #magic-cursor, #ball {
+        display: none !important;
+      }
+
+      /* Global Typography Clean & Elegant */
+      body, p, li, input, select, textarea {
+        font-family: 'Plus Jakarta Sans', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        color: #334155 !important;
+      }
+
+      h1, h2, h3, h4, h5, h6, .modal-title {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        letter-spacing: -0.02em !important;
+      }
+
+      /* Remove stray floating dots from template headers */
+      .section-title h3::before,
+      .section-title h3::after,
+      .page-header-box::before,
+      .page-header-box::after,
+      .section-title h2::before,
+      .section-title h2::after {
+        display: none !important;
+      }
+
+      /* CURTAIN WINDOW OPENING PRELOADER (LIGHT THEME & SLOWER OPENING) */
+      .preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 999999 !important;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .preloader-curtain {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 60%, #E6F0FA 100%);
+        z-index: 1;
+        transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+
+      .preloader-curtain.curtain-left {
+        left: 0;
+        border-right: 1px solid rgba(0, 119, 254, 0.15);
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.04);
+      }
+
+      .preloader-curtain.curtain-right {
+        right: 0;
+        border-left: 1px solid rgba(0, 119, 254, 0.15);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.04);
+      }
+
+      .preloader-center-emblem {
+        position: relative;
+        z-index: 2;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 15px 35px rgba(27, 79, 140, 0.15);
+        border: 2px solid rgba(0, 119, 254, 0.2);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .preloader-center-emblem img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+      }
+
+      .preloader.loaded .curtain-left {
+        transform: translateX(-100%);
+      }
+
+      .preloader.loaded .curtain-right {
+        transform: translateX(100%);
+      }
+
+      .preloader.loaded .preloader-center-emblem {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      .preloader.hidden-complete {
+        display: none !important;
+      }      /* STRICT ALWAYS-STICKY FULL TOP HEADER */
+      .main-header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 99999 !important;
+        transition: all 0.35s ease !important;
+      }
+
+      /* AT TOP (NON-SCROLLED): TRANSPARENT HEADER ON DARK BANNER */
+      .main-header .header-sticky {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid transparent !important;
+        padding: 12px 0 !important;
+        border-radius: 0 !important;
+        transition: all 0.35s ease !important;
+      }
+      .main-header:not(.scrolled-header) .main-menu ul li a {
+        color: #FFFFFF !important;
+      }
+
+      .main-header .navbar {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+      }
+      .navbar-brand {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-right: 28px !important;
+      }
+
+      .navbar-brand img {
+        height: 64px !important;
+        width: auto !important;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        transition: all 0.3s ease;
+      }
+
+      /* ON SCROLL DOWN: SOLID WHITE GLASSMORPHISM STICKY HEADER */
+      .main-header.scrolled-header .header-sticky {
+        background: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(16px) !important;
+        box-shadow: 0 6px 22px rgba(10, 37, 64, 0.09) !important;
+        border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+        padding: 6px 0 !important;
+      }
+      .main-header.scrolled-header .main-menu ul li a {
+        color: #0F172A !important;
+      }
+      .main-header.scrolled-header .navbar-brand img {
+        height: 54px !important;
+      }
+
+      /* Clean Spacing Nav Links */
+      .main-menu ul li a {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 0.95rem !important;
+        padding: 8px 18px !important;
+        color: #0F172A !important;
+        transition: color 0.25s ease !important;
+      }
+      .main-menu ul li a:hover {
+        color: #0077FE !important;
+      }
+
+      /* UNIFORM BRAND BUTTON STYLING */
+      .btn-default {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif !important;
+        font-size: 0.92rem !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        color: #FFFFFF !important;
+        background: linear-gradient(135deg, #1B4F8C 0%, #0077FE 100%) !important;
+        text-transform: capitalize !important;
+        padding: 13px 54px 13px 24px !important;
+        border-radius: 50px !important;
+        border: none !important;
+        box-shadow: 0 8px 22px rgba(27, 79, 140, 0.25) !important;
+        transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        position: relative !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        z-index: 1 !important;
+        cursor: pointer !important;
+        text-decoration: none !important;
+      }
+      .btn-default:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 12px 28px rgba(0, 119, 254, 0.35) !important;
+        color: #FFFFFF !important;
+      }
+
+      .btn-default::before {
+        content: '' !important;
+        position: absolute !important;
+        top: 50% !important;
+        right: 8px !important;
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50% !important;
+        background-color: #FFFFFF !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230077FE'%3E%3Cpath d='M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z'/%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        background-size: 14px 14px !important;
+        transform: translateY(-50%) !important;
+        transition: all 0.35s ease !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+      }
+      .btn-default:hover::before {
+        transform: translateY(-50%) rotate(45deg) !important;
+        background-color: #FFFFFF !important;
+      }
+
+      .btn-default::after {
+        display: none !important;
+      }
+
+      .btn-default.btn-highlighted {
+        background: #FFFFFF !important;
+        color: #1B4F8C !important;
+        border: 2px solid #1B4F8C !important;
+        box-shadow: none !important;
+        padding-right: 54px !important;
+      }
+      .btn-default.btn-highlighted::before {
+        background-color: #1B4F8C !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFFFFF'%3E%3Cpath d='M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z'/%3E%3C/svg%3E") !important;
+      }
+
+      /* Animated Service Card Styling */
+      .wound-guide-card {
+        background: #FFFFFF;
+        border-radius: 28px;
+        border: 1px solid #E2E8F0;
+        box-shadow: 0 12px 35px rgba(10, 37, 64, 0.05);
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        margin-bottom: 40px;
+      }
+      .wound-guide-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 50px rgba(27, 79, 140, 0.12);
+        border-color: #BAE6FD;
+      }
+      .wound-guide-img-box {
+        position: relative;
+        height: 100%;
+        min-height: 320px;
+        overflow: hidden;
+      }
+      .wound-guide-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+      .wound-guide-card:hover .wound-guide-img-box img {
+        transform: scale(1.05);
+      }
+      .wound-badge-tag {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        color: #1B4F8C;
+        font-weight: 800;
+        font-size: 0.78rem;
+        padding: 6px 14px;
+        border-radius: 50px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        border: 1px solid rgba(27, 79, 140, 0.15);
+      }
+
+      /* Category Filter Pills */
+      .category-pill-btn {
+        background: #FFFFFF;
+        color: #475569;
+        border: 1.5px solid #E2E8F0;
+        font-weight: 700;
+        font-size: 0.88rem;
+        padding: 10px 22px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .category-pill-btn:hover, .category-pill-btn.active {
+        background: linear-gradient(135deg, #1B4F8C, #0077FE);
+        color: #FFFFFF;
+        border-color: transparent;
+        box-shadow: 0 6px 18px rgba(27, 79, 140, 0.25);
+      }
+
+      /* LUXURY MODAL STYLING */
+      .custom-brand-modal .modal-content {
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid #E2E8F0;
+        box-shadow: 0 25px 60px rgba(10, 37, 64, 0.25);
+      }
+      .custom-brand-modal .modal-header {
+        background: linear-gradient(135deg, #1B4F8C 0%, #0077FE 100%);
+        color: #FFFFFF;
+        padding: 22px 28px;
+        position: relative;
+      }
+      .custom-brand-modal .modal-body {
+        padding: 30px 32px;
+        background: #FFFFFF;
+      }
+      .form-label-custom {
+        font-weight: 700;
+        font-size: 0.88rem;
+        color: #0F172A;
+        margin-bottom: 6px;
+        display: block;
+      }
+      .form-control-custom, .form-select-custom {
+        width: 100%;
+        border: 1.5px solid #E2E8F0;
+        border-radius: 12px;
+        padding: 12px 16px;
+        font-size: 0.92rem;
+        color: #0F172A;
+        background: #F8FAFC;
+        outline: none;
+        transition: all 0.2s ease;
+      }
+      .form-control-custom:focus, .form-select-custom:focus {
+        background: #FFFFFF;
+        border-color: #0077FE;
+        box-shadow: 0 0 0 4px rgba(0, 119, 254, 0.12);
+      }
+      .btn-cancel-modal {
+        background: #F1F5F9;
+        color: #475569;
+        font-weight: 700;
+        border: none;
+        border-radius: 50px;
+        padding: 12px 24px;
+        transition: all 0.2s ease;
+      }
+      .btn-cancel-modal:hover {
+        background: #E2E8F0;
+        color: #0F172A;
+      }
+
+      /* CTA Box & Dark Banner High Contrast Rules */
+      .cta-box, .cta-box-content, .cta-box-content h3, .cta-box-content p, .cta-box-content a {
+        color: #FFFFFF !important;
+      }
+      .cta-box-content h3 {
+        color: #FFFFFF !important;
+        font-weight: 800 !important;
+      }
+      .cta-box-content p {
+        color: #F1F5F9 !important;
+        font-weight: 500 !important;
+      }
+      .cta-box-content a {
+        color: #38BDF8 !important;
+        font-weight: 700 !important;
+      }
+
+      /* ATTRACTIVE FOOTER WITH CRISP HIGH-CONTRAST TEXT */
+      .attractive-footer {
+        position: relative;
+        background: linear-gradient(135deg, #051424 0%, #0A2540 50%, #06182C 100%);
+        color: #E2E8F0 !important;
+        padding-top: 75px;
+        padding-bottom: 30px;
+        font-size: 0.95rem;
+        overflow: hidden;
+      }
+      .attractive-footer p {
+        color: #CBD5E1 !important;
+      }
+      .attractive-footer-top-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #1B4F8C, #0077FE, #10B981, #0077FE);
+      }
+      .footer-logo-card {
+        display: inline-block;
+        background: #FFFFFF;
+        padding: 8px 16px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        margin-bottom: 20px;
+      }
+      .footer-logo-card img {
+        height: 46px;
+        width: auto;
+        object-fit: contain;
+      }
+      .footer-heading {
+        color: #FFFFFF !important;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 1.18rem;
+        font-weight: 800;
+        margin-bottom: 22px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .footer-heading::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, #0077FE, #10B981);
+        border-radius: 2px;
+      }
+      .footer-link-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .footer-link-list li {
+        margin-bottom: 12px;
+        color: #CBD5E1 !important;
+      }
+      .footer-link-list a {
+        color: #CBD5E1 !important;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+      .footer-link-list a:hover {
+        color: #38BDF8 !important;
+        transform: translateX(5px);
+      }
+      .footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .footer-contact-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(0, 119, 254, 0.15);
+        color: #38BDF8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        flex-shrink: 0;
+        border: 1px solid rgba(56, 189, 248, 0.25);
+      }
+      .footer-contact-text h6 {
+        color: #FFFFFF !important;
+        font-weight: 700;
+        font-size: 0.88rem;
+        margin: 0 0 2px 0;
+      }
+      .footer-contact-text p, .footer-contact-text a {
+        color: #CBD5E1 !important;
+        font-size: 0.88rem;
+        margin: 0;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .footer-contact-text a:hover {
+        color: #38BDF8 !important;
+      }
+      .footer-bottom-bar {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 24px;
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        font-size: 0.88rem;
+        color: #94A3B8 !important;
+      }
+      .footer-bottom-bar p, .footer-bottom-bar span {
+        color: #94A3B8 !important;
+      }
+
+      /* Floating Assistant Widget */
+      #assistant-widget-container {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+      }
+      .assistant-trigger-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #1B4F8C, #0077FE);
+        color: #FFFFFF;
+        border: none;
+        box-shadow: 0 8px 24px rgba(27, 79, 140, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .assistant-trigger-btn:hover {
+        transform: scale(1.08);
+      }
+      .assistant-badge-dot {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 14px;
+        height: 14px;
+        background: #10B981;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+      }
+      .assistant-chat-window {
+        position: absolute;
+        bottom: 74px;
+        right: 0;
+        width: 360px;
+        max-width: calc(100vw - 32px);
+        height: 520px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+        border: 1px solid #E2E8F0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px) scale(0.95);
+        transition: all 0.3s ease;
+      }
+      .assistant-chat-window.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+      }
+      .chat-header {
+        background: linear-gradient(135deg, #0A2540, #16385C);
+        color: #FFFFFF !important;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .chat-header-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .chat-header-info .chat-title {
+        color: #FFFFFF !important;
+        font-weight: 700;
+        font-size: 0.98rem;
+        margin: 0;
+      }
+      .chat-header-info .chat-subtitle {
+        color: #BAE6FD !important;
+        font-size: 0.78rem;
+        margin: 0;
+      }
+      .chat-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #1B4F8C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1rem;
+      }
+      .chat-body {
+        flex-grow: 1;
+        padding: 16px;
+        overflow-y: auto;
+        background: #F8FAFC;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .chat-msg {
+        max-width: 85%;
+        padding: 12px 16px;
+        border-radius: 16px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      .chat-msg.bot {
+        background: #FFFFFF;
+        color: #0F172A;
+        border-bottom-left-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        align-self: flex-start;
+        border: 1px solid #E2E8F0;
+      }
+      .chat-msg.user {
+        background: #1B4F8C;
+        color: #FFFFFF;
+        border-bottom-right-radius: 4px;
+        align-self: flex-end;
+      }
+      .chat-quick-replies {
+        padding: 10px 14px;
+        background: #FFFFFF;
+        border-top: 1px solid #E2E8F0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .quick-reply-btn {
+        background: #F0F7FF;
+        color: #1B4F8C;
+        border: 1px solid rgba(27, 79, 140, 0.2);
+        font-size: 0.78rem;
+        font-weight: 700;
+        padding: 6px 12px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .quick-reply-btn:hover {
+        background: #1B4F8C;
+        color: #FFFFFF;
+      }
+      .chat-input-bar {
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        background: #FFFFFF;
+        border-top: 1px solid #E2E8F0;
+        gap: 8px;
+      }
+      .chat-input-bar input {
+        flex-grow: 1;
+        border: 1px solid #E2E8F0;
+        border-radius: 50px;
+        padding: 8px 16px;
+        font-size: 0.88rem;
+        outline: none;
+      }
+      .chat-input-bar button {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1B4F8C;
+        color: #FFFFFF;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .booking-success-box {
+        display: none;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      .booking-success-box i {
+        font-size: 4rem;
+        color: #10B981;
+        margin-bottom: 16px;
+      }
+
+      /* BACK TO TOP BUTTON STYLING */
+      .back-to-top-btn {
+        position: fixed;
+        bottom: 24px;
+        right: 96px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #1B4F8C;
+        border: 1.5px solid #E2E8F0;
+        box-shadow: 0 8px 24px rgba(10, 37, 64, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.15rem;
+        z-index: 9998;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        text-decoration: none !important;
+      }
+
+      .back-to-top-btn.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .back-to-top-btn:hover {
+        background: linear-gradient(135deg, #1B4F8C, #0077FE);
+        color: #FFFFFF;
+        border-color: transparent;
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(27, 79, 140, 0.3);
+      }
+
+      /* COMPREHENSIVE MOBILE RESPONSIVENESS */
+      @media (max-width: 991px) {
+        .main-header.scrolled-header .header-sticky {
+          width: 95% !important;
+          border-radius: 20px !important;
+          margin: 10px auto 0 auto !important;
+          padding: 8px 16px !important;
+        }
+        .page-header {
+          padding-top: 90px !important;
+          padding-bottom: 50px !important;
+        }
+        .page-header h1 {
+          font-size: 2.1rem !important;
+        }
+        .wound-guide-img-box {
+          min-height: 240px !important;
+          height: 240px !important;
+        }
+        .footer-bottom-bar {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .back-to-top-btn {
+          bottom: 16px;
+          right: 80px;
+          width: 46px;
+          height: 46px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .category-pill-btn {
+          font-size: 0.78rem !important;
+          padding: 8px 16px !important;
+        }
+        .custom-brand-modal .modal-body {
+          padding: 20px 16px !important;
+        }
+        .custom-brand-modal .modal-header {
+          padding: 18px 20px !important;
+        }
+        #assistant-widget-container {
+          bottom: 16px;
+          right: 16px;
+        }
+        .assistant-trigger-btn {
+          width: 54px;
+          height: 54px;
+          font-size: 1.4rem;
+        }
+        .assistant-chat-window {
+          bottom: 74px;
+          right: 0;
+          width: calc(100vw - 32px);
+          height: 480px;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Curtain Opening Preloader Start (Light Theme & Slower Split Opening) -->
+	<div class="preloader" id="pagePreloader">
+      <div class="preloader-curtain curtain-left"></div>
+      <div class="preloader-curtain curtain-right"></div>
+      <div class="preloader-center-emblem">
+        <img src="assets/images/favicon.jpeg" alt="NYC Foot Dr Emblem">
+      </div>
+	</div>
+	<!-- Curtain Opening Preloader End -->
+
+    <!-- Header Start -->
+	<header class="main-header" id="mainHeader">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/images/logo.jpeg" alt="NYC Foot Dr Logo">
+					</a>
+
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <!-- CLEAN MINIMAL NAVBAR -->
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>                                
+                                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="WoundCare.html">Wound Guide</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#contact">Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-btn d-inline-flex ms-lg-3 mt-3 mt-lg-0">
+                            <a href="#" class="btn-default" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</a>
+                        </div>
+					</div>
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+    <!-- Page Header Banner -->
+    <div class="page-header text-white position-relative" style="background: linear-gradient(135deg, rgba(5, 20, 36, 0.88) 0%, rgba(10, 37, 64, 0.85) 100%), url('assets/images/clinic_modern.jpg') center/cover no-repeat; margin-top: 60px; padding: 100px 0 80px 0;">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8 mx-auto text-center">
+					<div class="page-header-box wow fadeInUp">
+						<h1 class="text-4xl md:text-5xl font-extrabold text-white mb-3" style="font-size: 2.8rem; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Wound Care & Salvage Guide</h1>
+						<p class="text-white text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-4" style="color: #F1F5F9 !important; font-size: 1.08rem; font-weight: 500;">
+                          Comprehensive clinical protocols for diabetic foot ulcers, venous leg wounds, arterial Doppler screening, post-surgical dehiscence, and cellular skin substitutes by Dr. Sapna Pandya, DPM.
+                        </p>
+                        <div class="d-flex flex-wrap align-items-center justify-content-center gap-3 mt-4">
+                          <a href="#guide-cards" class="btn-default">Explore Treatments</a>
+                          <a href="#" class="btn-default btn-highlighted" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Consultation</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Interactive Category Filter Pills -->
+    <div class="container mt-5" id="guide-cards">
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-2 mb-5 wow fadeInUp">
+        <button class="category-pill-btn active" data-filter="all">All Treatments</button>
+        <button class="category-pill-btn" data-filter="diabetic">Diabetic Ulcers</button>
+        <button class="category-pill-btn" data-filter="vascular">Vascular & Edema</button>
+        <button class="category-pill-btn" data-filter="biologics">Cellular Biologics</button>
+        <button class="category-pill-btn" data-filter="surgical">Surgical & Stump Care</button>
+      </div>
+
+      <!-- ANIMATED WOUND GUIDE FEATURE CARDS -->
+      
+      <!-- 1. Diabetic Foot Ulcers -->
+      <div class="wound-guide-card guide-item diabetic wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5">
+            <div class="wound-guide-img-box">
+              <img src="assets/images/wound_treatment.jpg" alt="Diabetic Foot Ulcer Salvage Procedure Room">
+              <span class="wound-badge-tag"><i class="fas fa-notes-medical me-1"></i> Limb Preservation</span>
+            </div>
+          </div>
+          <div class="col-lg-7 p-4 p-md-5">
+            <span class="text-sky-600 font-extrabold text-xs uppercase tracking-wider mb-2 d-block">Specialty Protocol #1</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Diabetic Foot Ulcer Salvage & Debridement</h3>
+            <p class="text-slate-600 leading-relaxed text-sm mb-4">
+              Diabetic foot ulcers represent severe chronic open wounds caused by peripheral neuropathy and arterial insufficiency. Dr. Sapna Pandya applies hospital-grade sharp surgical debridement to clear non-viable tissue, Total Contact Casting (TCC) offloading, bacterial biofilm eradication, and advanced bio-engineered skin grafts.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Total Contact Casting (TCC)
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Biofilm Eradication & Dressings
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Cellular Amniotic Grafts
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> 98% Limb Salvage Rate
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-default" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Ulcer Evaluation</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Venous & Arterial Vascular Ulcer Therapy -->
+      <div class="wound-guide-card guide-item vascular wow fadeInUp" data-wow-delay="0.2s">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5 order-lg-2">
+            <div class="wound-guide-img-box">
+              <img src="assets/images/vascular_scan.jpg" alt="Doppler Vascular Scan Examination Room">
+              <span class="wound-badge-tag" style="color: #0284C7;"><i class="fas fa-heartbeat me-1"></i> Vascular Diagnostics</span>
+            </div>
+          </div>
+          <div class="col-lg-7 p-4 p-md-5 order-lg-1">
+            <span class="text-sky-600 font-extrabold text-xs uppercase tracking-wider mb-2 d-block">Specialty Protocol #2</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Venous & Arterial Leg Ulcer Management</h3>
+            <p class="text-slate-600 leading-relaxed text-sm mb-4">
+              Lower leg ulcers often originate from severe venous hypertension or peripheral artery disease (PAD). We conduct non-invasive Doppler vascular exams right in our office to evaluate blood perfusion, followed by multi-layer compression wraps, fluid exudate control, and arterial tissue oxygenation support.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> In-Office Doppler Ultrasound
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Multi-Layer Compression Wraps
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Chronic Edema & Stasis Control
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> NYC Vascular Surgery Network
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-default" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Vascular Exam</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Bio-Engineered Skin Grafts & Amniotics -->
+      <div class="wound-guide-card guide-item biologics wow fadeInUp" data-wow-delay="0.3s">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5">
+            <div class="wound-guide-img-box">
+              <img src="assets/images/wound_tech.jpg" alt="Bio-engineered Skin Graft Applications">
+              <span class="wound-badge-tag" style="color: #059669;"><i class="fas fa-dna me-1"></i> Cellular Medicine</span>
+            </div>
+          </div>
+          <div class="col-lg-7 p-4 p-md-5">
+            <span class="text-sky-600 font-extrabold text-xs uppercase tracking-wider mb-2 d-block">Specialty Protocol #3</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Bio-Engineered Skin Grafts & Amniotics</h3>
+            <p class="text-slate-600 leading-relaxed text-sm mb-4">
+              When stubborn chronic wounds fail to close with standard topical wound dressings, advanced regenerative medicine provides the solution. Dr. Pandya applies FDA-cleared placental amniotic fluid matrices, human cellular skin substitutes, and collagen scaffolds that reactivate stalled healing cascades.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Amniotic Allografts
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Extracellular Collagen Matrix
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Rapid Epidermal Re-closure
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Medicare & PPO Coverage
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-default" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Biologics Consult</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Surgical Dehiscence & Post-Amputation Care -->
+      <div class="wound-guide-card guide-item surgical wow fadeInUp" data-wow-delay="0.4s">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5 order-lg-2">
+            <div class="wound-guide-img-box">
+              <img src="assets/images/clinic_modern.jpg" alt="Modern Surgical Wound Care Suite">
+              <span class="wound-badge-tag" style="color: #7C3AED;"><i class="fas fa-user-md me-1"></i> Post-Op Recovery</span>
+            </div>
+          </div>
+          <div class="col-lg-7 p-4 p-md-5 order-lg-1">
+            <span class="text-sky-600 font-extrabold text-xs uppercase tracking-wider mb-2 d-block">Specialty Protocol #4</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Surgical Wounds & Post-Amputation Stump Care</h3>
+            <p class="text-slate-600 leading-relaxed text-sm mb-4">
+              Post-operative surgical incision breakdown (dehiscence) or healing failure following partial foot amputation requires specialized podiatric surgical oversight. We utilize Negative Pressure Wound Therapy (NPWT/Wound VAC), stump line reshaping, and barrier skin preservation for prosthetic readiness.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Negative Pressure Therapy (VAC)
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Stump Preparation & Offloading
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Surgical Incision Dehiscence
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2 text-xs font-bold text-slate-700">
+                  <i class="fas fa-check-circle text-emerald-500"></i> Hospital Follow-up Continuity
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-default" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Post-Op Visit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ON SCROLL ANIMATED FAQ ACCORDION SECTION -->
+    <div class="bg-slate-50 py-20 border-t border-b border-slate-200 mt-5">
+      <div class="container">
+        <div class="row section-row text-center mb-5">
+          <div class="col-lg-8 mx-auto">
+            <div class="section-title mb-0">
+              <h3 class="wow fadeInUp"><i class="fas fa-question-circle text-sky-600 me-2"></i> Patient FAQs</h3>
+              <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Frequently Asked Questions About</span> Podiatric Wound Care</h2>
+              <p class="wow fadeInUp text-slate-600 mb-0" data-wow-delay="0.2s">Clear answers regarding treatment duration, Medicare insurance, and priority same-week scheduling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion custom-faq-accordion" id="guideFaqAccordion">
+              
+              <div class="accordion-item bg-white border border-slate-200 rounded-2xl mb-3 overflow-hidden shadow-sm wow fadeInUp">
+                <h2 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button font-bold text-slate-900 text-base p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                    <i class="fas fa-stethoscope text-sky-600 me-3"></i> How fast can Dr. Sapna Pandya see me for an urgent wound?
+                  </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#guideFaqAccordion">
+                  <div class="accordion-body text-slate-600 text-sm leading-relaxed p-4 pt-0 border-t border-slate-100">
+                    Active foot ulcers and infected surgical wounds are treated with priority. We hold reserved same-week and next-day clinical slots for urgent wound consultations in New York City. Call 646-991-9000 immediately.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border border-slate-200 rounded-2xl mb-3 overflow-hidden shadow-sm wow fadeInUp" data-wow-delay="0.2s">
+                <h2 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed font-bold text-slate-900 text-base p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    <i class="fas fa-file-invoice-dollar text-sky-600 me-3"></i> Are cellular skin grafts covered by Medicare & Insurance?
+                  </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#guideFaqAccordion">
+                  <div class="accordion-body text-slate-600 text-sm leading-relaxed p-4 pt-0 border-t border-slate-100">
+                    Yes! Medicare Part B and major commercial health insurance plans (PPO/HMO) routinely cover bio-engineered skin grafts, amniotic matrices, and Doppler circulation testing for non-healing diabetic and vascular ulcers when medical necessity criteria are met.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border border-slate-200 rounded-2xl mb-3 overflow-hidden shadow-sm wow fadeInUp" data-wow-delay="0.4s">
+                <h2 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed font-bold text-slate-900 text-base p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    <i class="fas fa-shield-alt text-sky-600 me-3"></i> What is Total Contact Casting (TCC) and why is it effective?
+                  </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#accordion">
+                  <div class="accordion-body text-slate-600 text-sm leading-relaxed p-4 pt-0 border-t border-slate-100">
+                    Total Contact Casting is the gold standard for diabetic plantar foot ulcer healing. It distributes body weight evenly across the entire lower leg and foot, completely removing pressure from the open wound site to allow rapid tissue closure.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item bg-white border border-slate-200 rounded-2xl mb-3 overflow-hidden shadow-sm wow fadeInUp" data-wow-delay="0.6s">
+                <h2 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed font-bold text-slate-900 text-base p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    <i class="fas fa-calendar-check text-sky-600 me-3"></i> How do I prepare for my first wound evaluation appointment?
+                  </button>
+                </h2>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#guideFaqAccordion">
+                  <div class="accordion-body text-slate-600 text-sm leading-relaxed p-4 pt-0 border-t border-slate-100">
+                    Please bring your photo ID, insurance card, a list of current medications, and any recent vascular imaging or lab reports. Wear comfortable clothing with easy access to lower legs.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ATTRACTIVE FOOTER -->
+    <footer class="attractive-footer">
+        <div class="attractive-footer-top-border"></div>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo-card">
+                        <img src="assets/images/logo.jpeg" alt="NYC Foot Dr Logo">
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-4" style="font-size: 0.92rem;">
+                      NYC Foot Dr — Dr. Sapna Pandya, DPM is New York City's premier podiatric wound care practice specializing in diabetic foot ulcer salvage, vascular leg wounds, cellular skin grafts, and limb preservation.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                      <span class="px-3 py-1 rounded-full bg-sky-950 text-sky-300 text-xs font-bold border border-sky-800"><i class="fas fa-certificate text-sky-400 me-1"></i> Board Certified DPM</span>
+                      <span class="px-3 py-1 rounded-full bg-sky-950 text-sky-300 text-xs font-bold border border-sky-800"><i class="fas fa-heartbeat text-sky-400 me-1"></i> Limb Salvage NYC</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html#home"><i class="fas fa-chevron-right me-2 text-sky-400 text-xs"></i> Home</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right me-2 text-sky-400 text-xs"></i> About Dr. Pandya</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-chevron-right me-2 text-sky-400 text-xs"></i> Clinical Services</a></li>
+                        <li><a href="WoundCare.html"><i class="fas fa-chevron-right me-2 text-sky-400 text-xs"></i> Wound Care Guide</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right me-2 text-sky-400 text-xs"></i> Practice Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Specialized Services</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="WoundCare.html"><i class="fas fa-notes-medical me-2 text-sky-400 text-xs"></i> Diabetic Foot Ulcers</a></li>
+                        <li><a href="WoundCare.html"><i class="fas fa-heartbeat me-2 text-sky-400 text-xs"></i> Venous Leg Ulcers</a></li>
+                        <li><a href="WoundCare.html"><i class="fas fa-vial me-2 text-sky-400 text-xs"></i> Arterial Ulcer Care</a></li>
+                        <li><a href="WoundCare.html"><i class="fas fa-dna me-2 text-sky-400 text-xs"></i> Biologics & Skin Grafts</a></li>
+                        <li><a href="WoundCare.html"><i class="fas fa-shoe-prints me-2 text-sky-400 text-xs"></i> Foot & Ankle Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact & Booking</h5>
+                    
+                    <div class="footer-contact-item">
+                      <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+                      <div class="footer-contact-text">
+                        <h6>Primary Clinic Line</h6>
+                        <a href="tel:+16469919000">646-991-9000</a>
+                      </div>
+                    </div>
+
+                    <div class="footer-contact-item">
+                      <div class="footer-contact-icon"><i class="fas fa-mobile-alt"></i></div>
+                      <div class="footer-contact-text">
+                        <h6>Secondary Line</h6>
+                        <a href="tel:894186796">894186796</a>
+                      </div>
+                    </div>
+
+                    <div class="footer-contact-item">
+                      <div class="footer-contact-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border-color: rgba(16, 185, 129, 0.3);"><i class="fab fa-whatsapp"></i></div>
+                      <div class="footer-contact-text">
+                        <h6>WhatsApp Consult</h6>
+                        <a href="https://wa.me/16469919000" target="_blank" class="text-emerald-400 font-bold">Chat 646-991-9000</a>
+                      </div>
+                    </div>
+
+                    <div class="mt-3">
+                      <button type="button" class="btn-default btn-sm w-100 text-center justify-content-center" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        Book Appointment
+                      </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>
+                  <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> NYC Foot Dr — Dr. Sapna Pandya, DPM. All Rights Reserved.</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 text-xs text-slate-400">
+                  <span><i class="fas fa-clock text-sky-400 me-1"></i> Mon-Fri: 8:30 AM – 5:30 PM</span>
+                  <span>|</span>
+                  <span><i class="fas fa-ambulance text-sky-400 me-1"></i> Urgent Wound Hotline: 646-991-9000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top Floating Button -->
+    <a href="#" id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Luxury Brand Appointment Modal -->
+    <div class="modal fade custom-brand-modal" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h4 class="modal-title font-extrabold text-white text-2xl mb-1" id="appointmentModalLabel">Schedule Appointment with Dr. Sapna Pandya, DPM</h4>
+              <p class="text-xs text-sky-100 mb-0 font-medium"><i class="fas fa-circle text-emerald-400 me-1" style="font-size: 0.5rem;"></i> NYC Foot Dr — Podiatric & Wound Care Specialist</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="appointmentForm" class="needs-validation" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="far fa-user me-1 text-sky-600"></i> Full Name *</label>
+                  <input type="text" class="form-control-custom" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="fas fa-phone-alt me-1 text-sky-600"></i> Phone Number *</label>
+                  <input type="tel" class="form-control-custom" placeholder="e.g. 646-991-9000" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="far fa-envelope me-1 text-sky-600"></i> Email Address *</label>
+                  <input type="email" class="form-control-custom" placeholder="e.g. john@example.com" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="fas fa-stethoscope me-1 text-sky-600"></i> Reason for Visit *</label>
+                  <select class="form-select-custom" required>
+                    <option value="" selected disabled>Select primary reason</option>
+                    <option value="diabetic-ulcer">Diabetic Foot Ulcer</option>
+                    <option value="venous-ulcer">Venous Leg Ulcer</option>
+                    <option value="arterial-ulcer">Arterial Ulcer / Circulation</option>
+                    <option value="surgical-wound">Surgical Wound Care</option>
+                    <option value="burn-care">Burn Treatment</option>
+                    <option value="general-foot">General Foot & Ankle Care</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="far fa-calendar-alt me-1 text-sky-600"></i> Preferred Date *</label>
+                  <input type="date" class="form-control-custom" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label-custom"><i class="far fa-clock me-1 text-sky-600"></i> Preferred Time Slot *</label>
+                  <select class="form-select-custom" required>
+                    <option value="" selected disabled>Choose time</option>
+                    <option value="morning">Morning (8:30 AM - 12:00 PM)</option>
+                    <option value="afternoon">Afternoon (12:00 PM - 3:30 PM)</option>
+                    <option value="late-afternoon">Late Afternoon (3:30 PM - 5:30 PM)</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-custom"><i class="far fa-comment-dots me-1 text-sky-600"></i> Additional Notes / Symptoms</label>
+                  <textarea class="form-control-custom" rows="3" placeholder="Briefly describe your symptoms..."></textarea>
+                </div>
+
+                <div class="col-12 mt-4 d-flex align-items-center justify-content-end gap-3">
+                  <button type="button" class="btn-cancel-modal" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn-default">
+                    Confirm Appointment Request
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="bookingSuccessBox" class="booking-success-box">
+              <i class="far fa-check-circle"></i>
+              <h4 class="font-bold text-slate-900 text-2xl mb-2">Appointment Request Submitted!</h4>
+              <p class="text-slate-600 mb-4">Thank you! Our clinic team at NYC Foot Dr will contact you shortly to confirm your exact appointment time.</p>
+              <button type="button" class="btn-default mt-2" data-bs-dismiss="modal">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Assistant Widget -->
+    <div id="assistant-widget-container">
+      <button type="button" id="assistantTrigger" class="assistant-trigger-btn" aria-label="Open Medical Assistant">
+        <i class="fas fa-user-nurse"></i>
+        <span class="assistant-badge-dot"></span>
+      </button>
+
+      <div id="assistantWindow" class="assistant-chat-window">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <div class="chat-avatar">FD</div>
+            <div>
+              <h6 class="chat-title">NYC Foot Dr Assistant</h6>
+              <p class="chat-subtitle">Online • Quick Help & FAQs</p>
+            </div>
+          </div>
+          <button type="button" id="assistantClose" class="text-white text-lg bg-transparent border-0 opacity-80 hover:opacity-100"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div id="chatBody" class="chat-body">
+          <div class="chat-msg bot">
+            Hello! 👋 Welcome to NYC Foot Dr. How can I help you regarding our podiatric services?
+          </div>
+        </div>
+
+        <div class="chat-quick-replies">
+          <button class="quick-reply-btn" data-query="services">Our Services</button>
+          <button class="quick-reply-btn" data-query="hours">Office Hours</button>
+          <button class="quick-reply-btn" data-query="appointment">Book Appointment</button>
+          <button class="quick-reply-btn" data-query="location">Directions & Location</button>
+        </div>
+
+        <form id="chatForm" class="chat-input-bar">
+          <input type="text" id="chatInput" placeholder="Type your message or question..." autocomplete="off">
+          <button type="submit" id="chatSendBtn" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Dentaire Template JavaScript Files -->
+    <script src="dentaire/js/jquery-3.7.1.min.js"></script>
+    <script src="dentaire/js/bootstrap.min.js"></script>
+    <script src="dentaire/js/validator.min.js"></script>
+    <script src="dentaire/js/jquery.slicknav.js"></script>
+    <script src="dentaire/js/swiper-bundle.min.js"></script>
+    <script src="dentaire/js/jquery.waypoints.min.js"></script>
+    <script src="dentaire/js/jquery.counterup.min.js"></script>
+    <script src="dentaire/js/jquery.magnific-popup.min.js"></script>
+    <script src="dentaire/js/SmoothScroll.js"></script>
+    <script src="dentaire/js/parallaxie.js"></script>
+    <script src="dentaire/js/gsap.min.js"></script>
+    <script src="dentaire/js/magiccursor.js"></script>
+    <script src="dentaire/js/SplitText.js"></script>
+    <script src="dentaire/js/ScrollTrigger.min.js"></script>
+    <script src="dentaire/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="dentaire/js/wow.js"></script>
+    <script src="dentaire/js/function.js"></script>
+
+    <!-- Curtain Opening Preloader JS & Category Filter JS & Back To Top JS -->
+    <script>
+      $(document).ready(function() {
+        // Curtain Split Open Light Theme Handler (Slower Graceful Opening 1.5s)
+        setTimeout(function() {
+          $('#pagePreloader').addClass('loaded');
+          setTimeout(function() {
+            $('#pagePreloader').addClass('hidden-complete');
+          }, 1550);
+        }, 500);
+
+        // Dynamic Floating Header & Back to Top Handler
+        $(window).on('scroll', function() {
+          if ($(window).scrollTop() > 30) {
+            $('#mainHeader').addClass('scrolled-header');
+            $('#backToTop').addClass('show');
+          } else {
+            $('#mainHeader').removeClass('scrolled-header');
+            $('#backToTop').removeClass('show');
+          }
+        });
+
+        // Smooth Back to Top Scroll
+        $('#backToTop').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: 0 }, 500);
+        });
+
+        // Category Pill Filter JS
+        $('.category-pill-btn').on('click', function() {
+          $('.category-pill-btn').removeClass('active');
+          $(this).addClass('active');
+
+          var filter = $(this).attr('data-filter');
+          if (filter === 'all') {
+            $('.guide-item').fadeIn(300);
+          } else {
+            $('.guide-item').hide();
+            $('.guide-item.' + filter).fadeIn(300);
+          }
+        });
+
+        $('#assistantTrigger').on('click', function() {
+          $('#assistantWindow').toggleClass('active');
+        });
+        $('#assistantClose').on('click', function() {
+          $('#assistantWindow').removeClass('active');
+        });
+        $('.quick-reply-btn').on('click', function() {
+          var key = $(this).attr('data-query');
+          var label = $(this).text();
+          var answers = {
+            'services': "Dr. Sapna Pandya, DPM specializes in Diabetic Foot Ulcers, Venous & Arterial Leg Ulcers, Surgical Wounds, Burn Care, Post-Amputation Wound Care, Circulation Issues, Biologics, and General Podiatry.",
+            'hours': "Our NYC clinic is open Monday – Friday: 8:30 AM – 5:30 PM.",
+            'appointment': "You can easily schedule a visit! Click 'Book Appointment' or call 646-991-9000.",
+            'location': "NYC Foot Dr is located in New York City, NY."
+          };
+          $('#chatBody').append('<div class="chat-msg user">' + label + '</div>');
+          setTimeout(function() {
+            $('#chatBody').append('<div class="chat-msg bot">' + (answers[key] || "Call us at 646-991-9000.") + '</div>');
+            $('#chatBody').scrollTop($('#chatBody')[0].scrollHeight);
+          }, 350);
+        });
+        $('#chatForm').on('submit', function(e) {
+          e.preventDefault();
+          var txt = $('#chatInput').val().trim();
+          if (!txt) return;
+          $('#chatBody').append('<div class="chat-msg user">' + txt + '</div>');
+          $('#chatInput').val('');
+          setTimeout(function() {
+            $('#chatBody').append('<div class="chat-msg bot">Thank you for your message! Call us at 646-991-9000 for immediate assistance.</div>');
+            $('#chatBody').scrollTop($('#chatBody')[0].scrollHeight);
+          }, 450);
+        });
+        $('#appointmentForm').on('submit', function(e) {
+          e.preventDefault();
+          $('#appointmentForm').hide();
+          $('#bookingSuccessBox').show();
+        });
+      });
+    </script>
+</body>
+</html>
