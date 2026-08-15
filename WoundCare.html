@@ -608,6 +608,88 @@
         border-radius: 12px !important;
       }
 
+      /* PREVENT ALL RIGHT MARGIN / MENU OVERFLOW ON MOBILE */
+      html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+      }
+      .slicknav_menu {
+        background: transparent !important;
+        padding: 0 !important;
+      }
+      .slicknav_btn {
+        background: #0A2540 !important;
+        border-radius: 10px !important;
+        padding: 8px 12px !important;
+      }
+      .slicknav_nav {
+        background: #FFFFFF !important;
+        box-shadow: 0 15px 35px rgba(10, 37, 64, 0.15) !important;
+        border-radius: 16px !important;
+        margin-top: 10px !important;
+        padding: 12px 16px !important;
+        border: 1px solid #E2E8F0 !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      /* FLOATING ASSISTANT CHAT WIDGET RESPONSIVE OVERHAUL */
+      #assistant-widget-container {
+        position: fixed !important;
+        bottom: 85px !important;
+        right: 16px !important;
+        z-index: 99990 !important;
+      }
+      .assistant-trigger-btn {
+        width: 52px !important;
+        height: 52px !important;
+        border-radius: 50% !important;
+        background: linear-gradient(135deg, #1B4F8C, #0077FE) !important;
+        color: #FFFFFF !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.3rem !important;
+        box-shadow: 0 8px 24px rgba(0, 119, 254, 0.35) !important;
+        border: 2px solid #FFFFFF !important;
+        cursor: pointer !important;
+        touch-action: manipulation !important;
+      }
+      .assistant-chat-window {
+        position: fixed !important;
+        bottom: 145px !important;
+        right: 16px !important;
+        left: 16px !important;
+        width: auto !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+        height: 480px !important;
+        max-height: calc(100vh - 175px) !important;
+        background: #FFFFFF !important;
+        border-radius: 24px !important;
+        box-shadow: 0 20px 50px rgba(10, 37, 64, 0.28) !important;
+        border: 1px solid #E2E8F0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transform: translateY(20px) scale(0.95) !important;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        z-index: 99998 !important;
+      }
+      .assistant-chat-window.active {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: translateY(0) scale(1) !important;
+      }
+
       /* Mobile Specific Overrides (< 768px) */
       @media (max-width: 768px) {
         .navbar-brand img {
@@ -645,22 +727,6 @@
           width: 42px !important;
           height: 42px !important;
           font-size: 0.9rem !important;
-        }
-        #assistant-widget-container {
-          bottom: 74px !important;
-          right: 16px !important;
-        }
-        #assistantTrigger {
-          width: 48px !important;
-          height: 48px !important;
-          font-size: 1.2rem !important;
-        }
-        .assistant-chat-window {
-          right: 12px !important;
-          left: 12px !important;
-          width: auto !important;
-          bottom: 135px !important;
-          max-height: 450px !important;
         }
       }
 
@@ -1712,10 +1778,14 @@
           }
         });
 
-        $('#assistantTrigger').on('click', function() {
+        $(document).on('click touchstart', '#assistantTrigger', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
           $('#assistantWindow').toggleClass('active');
         });
-        $('#assistantClose').on('click', function() {
+        $(document).on('click touchstart', '#assistantClose', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
           $('#assistantWindow').removeClass('active');
         });
         $('.quick-reply-btn').on('click', function() {
