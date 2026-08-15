@@ -607,11 +607,20 @@
         box-shadow: 0 12px 30px rgba(10, 37, 64, 0.1);
       }
 
-      /* Modal Mobile Responsiveness & High Contrast Header */
-      .custom-brand-modal .modal-dialog {
-        margin: 20px auto !important;
-        max-width: 720px;
-        width: calc(100% - 28px) !important;
+      /* MODAL TOP OFFSET FIX (ALWAYS OPENS BELOW HEADER) */
+      #appointmentModal.modal, .custom-brand-modal.modal {
+        padding-top: 75px !important;
+        padding-bottom: 30px !important;
+      }
+      .custom-brand-modal .modal-dialog,
+      #appointmentModal .modal-dialog {
+        margin: 10px auto 30px auto !important;
+        max-width: 680px !important;
+        width: calc(100% - 24px) !important;
+        min-height: auto !important;
+      }
+      .modal-dialog-centered {
+        min-height: auto !important;
       }
       .custom-brand-modal .modal-content {
         border-radius: 22px !important;
